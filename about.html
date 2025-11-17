@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Us | Dr. Vinod Kumar Jangir</title>
+
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      * {
+        font-family: "Poppins", sans-serif;
+        scroll-behavior: smooth;
+      }
+      body {
+        background: #f3f8ff;
+        color: #333;
+      }
+
+      h2.section-title {
+        text-align: center;
+        font-weight: 700;
+        color: #2196f3;
+        margin-bottom: 60px;
+        font-size: 2.5rem;
+      }
+      h2.section-title::after {
+        content: "";
+        width: 100px;
+        height: 4px;
+        background: #2196f3;
+        display: block;
+        margin: 10px auto;
+        border-radius: 3px;
+      }
+
+      /* Hero */
+      .hero {
+        background: linear-gradient(135deg, #e3f2fd, #bbdefb);
+        padding: 100px 0;
+      }
+      .hero img {
+        border-radius: 20px;
+        box-shadow: 0 10px 35px rgba(33, 150, 243, 0.2);
+      }
+      .hero h1 {
+        color: #2196f3;
+        font-weight: 700;
+      }
+      .hero p {
+        color: #555;
+        font-size: 17px;
+        line-height: 1.8;
+      }
+
+      /* About Dr */
+      .about-dr {
+        padding: 100px 0;
+        background: #fff;
+      }
+      .about-dr p {
+        font-size: 16px;
+        color: #444;
+        line-height: 1.8;
+      }
+
+      /* Mission & Vision */
+      .mission {
+        background: linear-gradient(135deg, #f0f8ff, #e8f3ff);
+        padding: 100px 0;
+      }
+      .mission-icon {
+        font-size: 45px;
+        color: #2196f3;
+        margin-bottom: 15px;
+      }
+
+      /* Clinic Facilities */
+      .facility-card {
+        background: #fff;
+        border-radius: 15px;
+        padding: 30px;
+        text-align: center;
+        box-shadow: 0 5px 25px rgba(33, 150, 243, 0.1);
+        transition: 0.4s;
+      }
+      .facility-card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 10px 35px rgba(33, 150, 243, 0.25);
+      }
+      .facility-card i {
+        font-size: 35px;
+        color: #2196f3;
+        margin-bottom: 10px;
+      }
+      .facility-card h5 {
+        color: #2196f3;
+        font-weight: 600;
+      }
+
+      /* Why Choose Us */
+      .why-us {
+        padding: 100px 0;
+        background: #fff;
+      }
+      .why-card {
+        background: #f5faff;
+        border-radius: 15px;
+        padding: 30px;
+        text-align: center;
+        box-shadow: 0 5px 20px rgba(33, 150, 243, 0.1);
+        transition: 0.4s;
+      }
+      .why-card:hover {
+        background: #2196f3;
+        color: #fff;
+        transform: translateY(-10px);
+        box-shadow: 0 8px 35px rgba(33, 150, 243, 0.3);
+      }
+      .why-card i {
+        font-size: 40px;
+        color: #2196f3;
+        margin-bottom: 15px;
+        transition: 0.4s;
+      }
+      .why-card:hover i {
+        color: #fff;
+      }
+
+      @media (max-width: 767px) {
+        .hero,
+        .about-dr,
+        .mission,
+        .why-us {
+          padding: 70px 0;
+        }
+      }
+    </style>
+  </head>
+  <body><!-- ===================== NAVBAR ===================== -->
+    <nav
+      class="navbar navbar-expand-lg navbar-dark bg-primary shadow sticky-top"
+    >
+      <div class="container">
+        <a class="navbar-brand fw-bold fs-4" href="#"
+          >Shri Vishwakarma Clinic</a
+        >
+        <button
+          class="navbar-toggler"
+          data-bs-toggle="collapse"
+          data-bs-target="#menu"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div id="menu" class="collapse navbar-collapse">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a href="http://127.0.0.1:5500/index.html" class="nav-link"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a href="http://127.0.0.1:5500/about.html" class="nav-link"
+                >About</a
+              >
+            </li>
+            <li class="nav-item">
+              <a href="http://127.0.0.1:5500/services.html" class="nav-link"
+                >Services</a
+              >
+            </li>
+            <li class="nav-item">
+              <a href="http://127.0.0.1:5500/gallery.html" class="nav-link"
+                >Gallery</a
+              >
+            </li>
+            <li class="nav-item">
+              <a href="http://127.0.0.1:5500/contact.html" class="nav-link"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Hero -->
+    <section class="hero">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-6" data-aos="fade-right">
+            <img
+              src="./img/5.jpg"
+              alt="Dr Vinod Kumar Jangir"
+              class="img-fluid"
+            />
+          </div>
+          <div class="col-md-6" data-aos="fade-left">
+            <h1>Dr. Vinod Kumar Jangir</h1>
+            <p>
+              <strong>M.D. (Physician), FIDM – Diabetologist</strong><br />
+              Fellowship in Diabetes Mellitus | Founder of Shri Vishwakarma
+              Clinic, Mukundgarh.
+            </p>
+            <p>
+              With years of experience in General Medicine and Diabetology, Dr.
+              Vinod Kumar Jangir is known for his personalized, evidence-based
+              approach to patient care. He is dedicated to improving community
+              health through diagnostic precision and preventive care.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Dr -->
+    <section class="about-dr">
+      <div class="container">
+        <h2 class="section-title" data-aos="fade-up">
+          About Dr. Vinod Kumar Jangir
+        </h2>
+        <div class="row">
+          <div class="col-lg-10 mx-auto" data-aos="fade-up">
+            <p>
+              Dr. Vinod Kumar Jangir is a highly qualified M.D. Physician and
+              Diabetologist holding a Fellowship in Diabetes Mellitus (FIDM). He
+              founded Shri Vishwakarma Clinic with a mission to make advanced
+              medical care accessible to all sections of society. His clinic
+              offers services such as Diabetes Care, Sonology, General Medicine,
+              and Comprehensive Diagnostics under one roof.
+            </p>
+            <p>
+              Known for his calm demeanor and patient-first approach, Dr. Jangir
+              has helped hundreds of patients achieve better health through
+              timely diagnosis and lifestyle management.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Mission & Vision -->
+    <section class="mission">
+      <div class="container">
+        <h2 class="section-title" data-aos="fade-up">Our Mission & Vision</h2>
+        <div class="row text-center">
+          <div class="col-md-6" data-aos="fade-right">
+            <i class="bi bi-bullseye mission-icon"></i>
+            <h5>Our Mission</h5>
+            <p>
+              To deliver accurate diagnosis, personalized treatment, and
+              empathetic care for every patient through modern medical
+              technology and human connection.
+            </p>
+          </div>
+          <div class="col-md-6" data-aos="fade-left">
+            <i class="bi bi-eye mission-icon"></i>
+            <h5>Our Vision</h5>
+            <p>
+              To be Mukundgarh’s most trusted clinic for General Medicine and
+              Diabetes Care — improving lives with compassion and clinical
+              excellence.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Clinic Facilities -->
+    <section class="py-5">
+      <div class="container">
+        <h2 class="section-title" data-aos="fade-up">Clinic & Facilities</h2>
+        <div class="row g-4">
+          <div class="col-md-4" data-aos="zoom-in">
+            <div class="facility-card">
+              <i class="bi bi-heart-pulse"></i>
+              <h5>Diabetes Clinic</h5>
+              <p>
+                Advanced monitoring and custom treatment plans for diabetes and
+                lifestyle disorders.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4" data-aos="zoom-in" data-aos-delay="100">
+            <div class="facility-card">
+              <i class="bi bi-hospital"></i>
+              <h5>Diagnostic Center</h5>
+              <p>
+                Fully equipped lab with X-Ray, ECG, and Ultrasound services for
+                accurate diagnosis.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4" data-aos="zoom-in" data-aos-delay="200">
+            <div class="facility-card">
+              <i class="bi bi-capsule"></i>
+              <h5>Pharmacy</h5>
+              <p>
+                In-house medical store providing authentic medicines and
+                essential health supplies.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why Patients Trust Us -->
+    <section class="why-us">
+      <div class="container">
+        <h2 class="section-title" data-aos="fade-up">Why Patients Trust Us</h2>
+        <div class="row g-4">
+          <div class="col-md-3" data-aos="fade-up">
+            <div class="why-card">
+              <i class="bi bi-person-badge"></i>
+              <h5>Qualified Expert</h5>
+              <p>
+                Certified M.D. Physician with FIDM specialization in Diabetes.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-3" data-aos="fade-up" data-aos-delay="100">
+            <div class="why-card">
+              <i class="bi bi-heart"></i>
+              <h5>Patient Care First</h5>
+              <p>
+                Every patient receives individual attention and compassionate
+                support.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-3" data-aos="fade-up" data-aos-delay="200">
+            <div class="why-card">
+              <i class="bi bi-check2-circle"></i>
+              <h5>Accurate Results</h5>
+              <p>
+                Advanced equipment ensures precise testing and timely reports.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-3" data-aos="fade-up" data-aos-delay="300">
+            <div class="why-card">
+              <i class="bi bi-cash-coin"></i>
+              <h5>Affordable Treatment</h5>
+              <p>
+                Quality healthcare at transparent, affordable prices for
+                everyone.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script>
+      AOS.init({ duration: 1000, once: true });
+    </script>
+  </body>
+</html>
