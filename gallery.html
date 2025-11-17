@@ -248,5 +248,75 @@
         autoplayVideos: true,
       });
     </script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "WebPage",
+            "@id": "https://yourwebsite.com/gallery",
+            "url": "https://yourwebsite.com/gallery",
+            "name": "Gallery | Dr. Vinod Kumar Jangir",
+            "description": "Video gallery featuring educational and informative medical videos from Dr. Vinod Kumar Jangir.",
+            "isPartOf": {
+              "@type": "WebSite",
+              "@id": "https://yourwebsite.com/"
+            }
+          },
+
+          {
+            "@type": "BreadcrumbList",
+            "@id": "https://yourwebsite.com/gallery#breadcrumb",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://yourwebsite.com/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Gallery",
+                "item": "https://yourwebsite.com/gallery"
+              }
+            ]
+          },
+
+          {
+            "@type": "VideoObject",
+            "@id": "https://yourwebsite.com/gallery#video1",
+            "name": "Clinic Health Guide – Video 1",
+            "description": "Informative healthcare video from Dr. Vinod Kumar Jangir.",
+            "thumbnailUrl": ["https://yourwebsite.com/video-thumb1.jpg"],
+            "uploadDate": "2024-01-01",
+            "contentUrl": "https://www.youtube.com/watch?v=ysz5S6PUM-U",
+            "embedUrl": "https://www.youtube.com/embed/ysz5S6PUM-U"
+          },
+
+          {
+            "@type": "VideoObject",
+            "@id": "https://yourwebsite.com/gallery#video2",
+            "name": "Health Tips – Video 2",
+            "description": "Educational healthcare video from Dr. Vinod Kumar Jangir.",
+            "thumbnailUrl": ["https://yourwebsite.com/video-thumb2.jpg"],
+            "uploadDate": "2024-01-01",
+            "contentUrl": "https://www.youtube.com/watch?v=jNQXAC9IVRw",
+            "embedUrl": "https://www.youtube.com/embed/jNQXAC9IVRw"
+          },
+
+          {
+            "@type": "VideoObject",
+            "@id": "https://yourwebsite.com/gallery#video3",
+            "name": "Clinic Awareness – Video 3",
+            "description": "Health awareness video for patients by Dr. Vinod Kumar Jangir.",
+            "thumbnailUrl": ["https://yourwebsite.com/video-thumb3.jpg"],
+            "uploadDate": "2024-01-01",
+            "contentUrl": "https://www.youtube.com/watch?v=VYOjWnS4cMY",
+            "embedUrl": "https://www.youtube.com/embed/VYOjWnS4cMY"
+          }
+        ]
+      }
+    </script>
   </body>
 </html>

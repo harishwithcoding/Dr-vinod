@@ -370,5 +370,92 @@
     <script>
       AOS.init({ duration: 1000, once: true });
     </script>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+
+    {
+      "@type": "WebPage",
+      "@id": "https://yourwebsite.com/about",
+      "url": "https://yourwebsite.com/about",
+      "name": "About Us | Dr. Vinod Kumar Jangir",
+      "description": "About Dr. Vinod Kumar Jangir — M.D. Physician & Diabetologist offering General Medicine, Diabetes Care, Sonography and Diagnostic Services.",
+      "isPartOf": {
+        "@type": "WebSite",
+        "@id": "https://yourwebsite.com/"
+      }
+    },
+
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://yourwebsite.com/about#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://yourwebsite.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "About Us",
+          "item": "https://yourwebsite.com/about"
+        }
+      ]
+    },
+
+    {
+      "@type": "Person",
+      "@id": "https://yourwebsite.com/about#doctor",
+      "name": "Dr. Vinod Kumar Jangir",
+      "image": "https://yourwebsite.com/doctorphoto.jpg",
+      "url": "https://yourwebsite.com/about",
+      "jobTitle": "M.D. Physician & Diabetologist",
+      "medicalSpecialty": [
+        "Diabetology",
+        "General Medicine",
+        "Diagnostic Imaging",
+        "Sonology"
+      ],
+      "worksFor": {
+        "@type": "MedicalClinic",
+        "@id": "https://yourwebsite.com/#clinic"
+      },
+      "sameAs": [
+        "https://www.google.com/search?q=Dr+Vinod+Kumar+Jangir"
+      ]
+    },
+
+    {
+      "@type": "MedicalClinic",
+      "@id": "https://yourwebsite.com/#clinic",
+      "name": "Shri Vishwakarma Clinic",
+      "url": "https://yourwebsite.com/",
+      "image": "https://yourwebsite.com/clinic-photo.jpg",
+      "logo": "https://yourwebsite.com/logo.png",
+      "telephone": "+91XXXXXXXXXX",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Your Clinic Address",
+        "addressLocality": "Mukundgarh",
+        "addressRegion": "Rajasthan",
+        "postalCode": "XXXXXX",
+        "addressCountry": "IN"
+      },
+      "openingHours": "Mo-Su 09:00-21:00",
+      "medicalSpecialty": [
+        "Diabetology",
+        "General Medicine",
+        "Radiology",
+        "Ultrasound",
+        "Pathology"
+      ]
+    }
+
+  ]
+}
+</script>
   </body>
 </html>

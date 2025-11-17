@@ -519,5 +519,108 @@
         once: true,
       });
     </script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": "Our Medical Services | Dr. Vinod Kumar Jangir",
+        "url": "https://yourwebsite.com/services",
+        "description": "General Medicine, Ultrasound, Diagnostic Lab, X-Ray, Diabetes Care, Health Checkup Packages, Pharmacy & more medical services by Dr. Vinod Kumar Jangir.",
+        "breadcrumb": {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://yourwebsite.com/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Medical Services",
+              "item": "https://yourwebsite.com/services"
+            }
+          ]
+        }
+      }
+    </script>
+
+    <!-- Organization Schema -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "MedicalClinic",
+        "name": "Dr. Vinod Kumar Jangir Clinic",
+        "url": "https://yourwebsite.com/",
+        "logo": "https://yourwebsite.com/your-logo.png",
+        "image": "https://yourwebsite.com/clinic-image.jpg",
+        "description": "Healthcare services including General Medicine, Sonography, Lab Tests, X-Ray, Diabetes Care, Pharmacy and more.",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Your Clinic Address",
+          "addressLocality": "Jaipur",
+          "addressRegion": "Rajasthan",
+          "postalCode": "30200X",
+          "addressCountry": "IN"
+        },
+        "telephone": "+91XXXXXXXXXX",
+        "openingHours": "Mo-Su 09:00-21:00"
+      }
+    </script>
+
+    <!-- Medical Services Schema -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "ItemList",
+        "name": "List of Medical Services",
+        "itemListElement": [
+          {
+            "@type": "Service",
+            "name": "General Medicine",
+            "description": "Comprehensive diagnosis, treatment and prevention care for all patients.",
+            "provider": {
+              "@type": "Person",
+              "name": "Dr. Vinod Kumar Jangir"
+            }
+          },
+
+          {
+            "@type": "Service",
+            "name": "Ultrasound / Sonology",
+            "description": "High-precision ultrasound imaging for accurate diagnosis.",
+            "provider": {
+              "@type": "Person",
+              "name": "Dr. Vinod Kumar Jangir"
+            }
+          },
+
+          {
+            "@type": "Service",
+            "name": "Diagnostic Lab & X-Ray",
+            "description": "Blood tests, ECG, and radiology imaging with accurate reporting."
+          },
+
+          {
+            "@type": "Service",
+            "name": "Diabetes & Lifestyle Care",
+            "description": "Specialized diabetes, obesity, hypertension management."
+          },
+
+          {
+            "@type": "Service",
+            "name": "Health Checkup Packages",
+            "description": "Affordable health screening packages including CBC, LFT, KFT, Thyroid & more."
+          },
+
+          {
+            "@type": "Service",
+            "name": "Pharmacy & Medical Store",
+            "description": "Complete range of genuine medicines & medical products."
+          }
+        ]
+      }
+    </script>
   </body>
 </html>

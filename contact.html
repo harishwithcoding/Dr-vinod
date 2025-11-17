@@ -1,185 +1,196 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us | Dr. Vinod Kumar Jangir</title>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact Us | Dr. Vinod Kumar Jangir</title>
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
 
-  <!-- Bootstrap -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
-  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-
-  <style>
-    * {
-      font-family: 'Poppins', sans-serif;
-      scroll-behavior: smooth;
-    }
-
-    body {
-      background-color: #f3f8ff;
-      color: #333;
-    }
-
-    h2.section-title {
-      text-align: center;
-      font-weight: 700;
-      color: #2196f3;
-      margin-bottom: 60px;
-      font-size: 2.5rem;
-    }
-
-    h2.section-title::after {
-      content: '';
-      width: 100px;
-      height: 4px;
-      background: #2196f3;
-      display: block;
-      margin: 10px auto;
-      border-radius: 3px;
-    }
-
-    .contact-section {
-      padding: 100px 0;
-    }
-
-    .contact-info,
-    .contact-form {
-      background: #fff;
-      border-radius: 15px;
-      padding: 40px;
-      box-shadow: 0 5px 25px rgba(33, 150, 243, 0.15);
-    }
-
-    .contact-info i {
-      color: #2196f3;
-      font-size: 25px;
-      margin-right: 15px;
-    }
-
-    .contact-info h5 {
-      font-weight: 600;
-      color: #2196f3;
-      margin-bottom: 5px;
-    }
-
-    .contact-info p {
-      color: #555;
-      margin-bottom: 20px;
-    }
-
-    .form-control {
-      border-radius: 10px;
-      border: 1px solid #d3e3ff;
-      padding: 14px;
-    }
-
-    .btn-send {
-      background: #2196f3;
-      color: #fff;
-      border-radius: 25px;
-      padding: 10px 25px;
-      border: none;
-      transition: 0.3s;
-    }
-
-    .btn-send:hover {
-      background: #1565c0;
-    }
-
-    .map iframe {
-      border: none;
-      width: 100%;
-      height: 400px;
-      border-radius: 15px;
-      box-shadow: 0 5px 25px rgba(33, 150, 243, 0.15);
-    }
-
-    /* Clinic Overview */
-    .clinic-overview {
-      background: linear-gradient(120deg, #e3f2fd, #f3f8ff);
-      padding: 100px 0;
-    }
-
-    .clinic-overview p {
-      font-size: 16px;
-      color: #444;
-      line-height: 1.8;
-    }
-
-    /* FAQ Section */
-    .faq-section {
-      background: #fff;
-      padding: 100px 0;
-    }
-
-    .faq-item {
-      background: #f8fbff;
-      border-left: 5px solid #2196f3;
-      padding: 20px;
-      margin-bottom: 15px;
-      border-radius: 8px;
-      box-shadow: 0 3px 15px rgba(33, 150, 243, 0.1);
-    }
-
-    .faq-item h6 {
-      color: #2196f3;
-      font-weight: 600;
-    }
-
-    .faq-item p {
-      color: #555;
-      margin-top: 5px;
-    }
-
-    /* Testimonials */
-    .testimonial-section {
-      background: linear-gradient(135deg, #f0f8ff, #e8f3ff);
-      padding: 100px 0;
-    }
-
-    .testimonial-card {
-      background: #fff;
-      border-radius: 15px;
-      padding: 30px;
-      box-shadow: 0 6px 20px rgba(33, 150, 243, 0.1);
-      transition: all 0.4s;
-    }
-
-    .testimonial-card:hover {
-      transform: translateY(-10px);
-      box-shadow: 0 10px 35px rgba(33, 150, 243, 0.3);
-    }
-
-    .testimonial-card i {
-      font-size: 35px;
-      color: #2196f3;
-      margin-bottom: 15px;
-    }
-
-    .testimonial-card h5 {
-      color: #2196f3;
-      font-weight: 600;
-      margin-bottom: 5px;
-    }
-
-    .testimonial-card p {
-      font-size: 15px;
-      color: #555;
-    }
-
-    @media (max-width: 767px) {
-      .contact-section, .clinic-overview, .faq-section, .testimonial-section {
-        padding: 70px 0;
+    <style>
+      * {
+        font-family: "Poppins", sans-serif;
+        scroll-behavior: smooth;
       }
-    }
-  </style>
-</head>
 
-<body>
-  <!-- ===================== NAVBAR ===================== -->
+      body {
+        background-color: #f3f8ff;
+        color: #333;
+      }
+
+      h2.section-title {
+        text-align: center;
+        font-weight: 700;
+        color: #2196f3;
+        margin-bottom: 60px;
+        font-size: 2.5rem;
+      }
+
+      h2.section-title::after {
+        content: "";
+        width: 100px;
+        height: 4px;
+        background: #2196f3;
+        display: block;
+        margin: 10px auto;
+        border-radius: 3px;
+      }
+
+      .contact-section {
+        padding: 100px 0;
+      }
+
+      .contact-info,
+      .contact-form {
+        background: #fff;
+        border-radius: 15px;
+        padding: 40px;
+        box-shadow: 0 5px 25px rgba(33, 150, 243, 0.15);
+      }
+
+      .contact-info i {
+        color: #2196f3;
+        font-size: 25px;
+        margin-right: 15px;
+      }
+
+      .contact-info h5 {
+        font-weight: 600;
+        color: #2196f3;
+        margin-bottom: 5px;
+      }
+
+      .contact-info p {
+        color: #555;
+        margin-bottom: 20px;
+      }
+
+      .form-control {
+        border-radius: 10px;
+        border: 1px solid #d3e3ff;
+        padding: 14px;
+      }
+
+      .btn-send {
+        background: #2196f3;
+        color: #fff;
+        border-radius: 25px;
+        padding: 10px 25px;
+        border: none;
+        transition: 0.3s;
+      }
+
+      .btn-send:hover {
+        background: #1565c0;
+      }
+
+      .map iframe {
+        border: none;
+        width: 100%;
+        height: 400px;
+        border-radius: 15px;
+        box-shadow: 0 5px 25px rgba(33, 150, 243, 0.15);
+      }
+
+      /* Clinic Overview */
+      .clinic-overview {
+        background: linear-gradient(120deg, #e3f2fd, #f3f8ff);
+        padding: 100px 0;
+      }
+
+      .clinic-overview p {
+        font-size: 16px;
+        color: #444;
+        line-height: 1.8;
+      }
+
+      /* FAQ Section */
+      .faq-section {
+        background: #fff;
+        padding: 100px 0;
+      }
+
+      .faq-item {
+        background: #f8fbff;
+        border-left: 5px solid #2196f3;
+        padding: 20px;
+        margin-bottom: 15px;
+        border-radius: 8px;
+        box-shadow: 0 3px 15px rgba(33, 150, 243, 0.1);
+      }
+
+      .faq-item h6 {
+        color: #2196f3;
+        font-weight: 600;
+      }
+
+      .faq-item p {
+        color: #555;
+        margin-top: 5px;
+      }
+
+      /* Testimonials */
+      .testimonial-section {
+        background: linear-gradient(135deg, #f0f8ff, #e8f3ff);
+        padding: 100px 0;
+      }
+
+      .testimonial-card {
+        background: #fff;
+        border-radius: 15px;
+        padding: 30px;
+        box-shadow: 0 6px 20px rgba(33, 150, 243, 0.1);
+        transition: all 0.4s;
+      }
+
+      .testimonial-card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 10px 35px rgba(33, 150, 243, 0.3);
+      }
+
+      .testimonial-card i {
+        font-size: 35px;
+        color: #2196f3;
+        margin-bottom: 15px;
+      }
+
+      .testimonial-card h5 {
+        color: #2196f3;
+        font-weight: 600;
+        margin-bottom: 5px;
+      }
+
+      .testimonial-card p {
+        font-size: 15px;
+        color: #555;
+      }
+
+      @media (max-width: 767px) {
+        .contact-section,
+        .clinic-overview,
+        .faq-section,
+        .testimonial-section {
+          padding: 70px 0;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- ===================== NAVBAR ===================== -->
     <nav
       class="navbar navbar-expand-lg navbar-dark bg-primary shadow sticky-top"
     >
@@ -226,134 +237,345 @@
       </div>
     </nav>
 
-  <!-- Contact Info + Form -->
-  <section class="contact-section">
-    <div class="container">
-      <h2 class="section-title" data-aos="fade-up">Contact Us</h2>
+    <!-- Contact Info + Form -->
+    <section class="contact-section">
+      <div class="container">
+        <h2 class="section-title" data-aos="fade-up">Contact Us</h2>
 
-      <div class="row g-5">
-        <div class="col-md-5" data-aos="fade-right">
-          <div class="contact-info">
-            <h5><i class="bi bi-geo-alt-fill"></i>Clinic Address</h5>
-            <p>Shri Vishwakarma Clinic, Mukundgarh, Rajasthan</p>
-            <h5><i class="bi bi-telephone-fill"></i>Phone</h5>
-            <p>+91 818869677</p>
-            <h5><i class="bi bi-envelope-fill"></i>Email</h5>
-            <p>dr.vinodjangir@gmail.com</p>
-            <h5><i class="bi bi-clock-fill"></i>Working Hours</h5>
-            <p>Mon–Sat: 9:00 AM – 6:00 PM<br>Sunday: Closed</p>
+        <div class="row g-5">
+          <div class="col-md-5" data-aos="fade-right">
+            <div class="contact-info">
+              <h5><i class="bi bi-geo-alt-fill"></i>Clinic Address</h5>
+              <p>Shri Vishwakarma Clinic, Mukundgarh, Rajasthan</p>
+              <h5><i class="bi bi-telephone-fill"></i>Phone</h5>
+              <p>+91 818869677</p>
+              <h5><i class="bi bi-envelope-fill"></i>Email</h5>
+              <p>dr.vinodjangir@gmail.com</p>
+              <h5><i class="bi bi-clock-fill"></i>Working Hours</h5>
+              <p>Mon–Sat: 9:00 AM – 6:00 PM<br />Sunday: Closed</p>
+            </div>
+          </div>
+
+          <div class="col-md-7" data-aos="fade-left">
+            <div class="contact-form">
+              <form>
+                <div class="row g-3">
+                  <div class="col-md-6">
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="Full Name"
+                      required
+                    />
+                  </div>
+                  <div class="col-md-6">
+                    <input
+                      type="email"
+                      class="form-control"
+                      placeholder="Email Address"
+                      required
+                    />
+                  </div>
+                  <div class="col-md-6">
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="Phone Number"
+                      required
+                    />
+                  </div>
+                  <div class="col-md-6">
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="Subject"
+                    />
+                  </div>
+                  <div class="col-12">
+                    <textarea
+                      class="form-control"
+                      rows="5"
+                      placeholder="Your Message"
+                      required
+                    ></textarea>
+                  </div>
+                  <div class="col-12 text-center">
+                    <button class="btn-send mt-3" type="submit">
+                      Send Message
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
           </div>
         </div>
 
-        <div class="col-md-7" data-aos="fade-left">
-          <div class="contact-form">
-            <form>
-              <div class="row g-3">
-                <div class="col-md-6"><input type="text" class="form-control" placeholder="Full Name" required></div>
-                <div class="col-md-6"><input type="email" class="form-control" placeholder="Email Address" required></div>
-                <div class="col-md-6"><input type="text" class="form-control" placeholder="Phone Number" required></div>
-                <div class="col-md-6"><input type="text" class="form-control" placeholder="Subject"></div>
-                <div class="col-12"><textarea class="form-control" rows="5" placeholder="Your Message" required></textarea></div>
-                <div class="col-12 text-center"><button class="btn-send mt-3" type="submit">Send Message</button></div>
-              </div>
-            </form>
+        <div class="map mt-5" data-aos="zoom-in">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3623.960057911829!2d75.2060!3d27.2060!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396c5bdfdf!2sMukundgarh%2C%20Rajasthan!5e0!3m2!1sen!2sin!4v1700000000000"
+            allowfullscreen=""
+            loading="lazy"
+          ></iframe>
+        </div>
+      </div>
+    </section>
+
+    <!-- Clinic Overview -->
+    <section class="clinic-overview">
+      <div class="container">
+        <h2 class="section-title" data-aos="fade-up">Clinic Overview</h2>
+        <div class="row align-items-center">
+          <div class="col-md-6" data-aos="fade-right">
+            <img
+              src="yourclinicimage.jpg"
+              class="img-fluid rounded-4 shadow"
+              alt="Clinic"
+            />
+          </div>
+          <div class="col-md-6" data-aos="fade-left">
+            <p>
+              At Shri Vishwakarma Clinic, we combine compassionate care with
+              advanced medical technology. Under the guidance of
+              <strong>Dr. Vinod Kumar Jangir</strong>, we provide complete
+              health diagnostics, diabetes management, ultrasound services, and
+              preventive healthcare — all in one trusted center.
+            </p>
+            <p>
+              Our clinic is equipped with X-ray, ECG, and advanced ultrasound
+              systems. We aim to ensure early diagnosis, accurate treatment, and
+              better outcomes for every patient who visits us.
+            </p>
           </div>
         </div>
       </div>
+    </section>
 
-      <div class="map mt-5" data-aos="zoom-in">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3623.960057911829!2d75.2060!3d27.2060!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396c5bdfdf!2sMukundgarh%2C%20Rajasthan!5e0!3m2!1sen!2sin!4v1700000000000" allowfullscreen="" loading="lazy"></iframe>
-      </div>
-    </div>
-  </section>
+    <!-- FAQ Section -->
+    <section class="faq-section">
+      <div class="container">
+        <h2 class="section-title" data-aos="fade-up">
+          Frequently Asked Questions
+        </h2>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="faq-item" data-aos="fade-right">
+              <h6>How can I book an appointment?</h6>
+              <p>
+                You can call us directly or fill the form above. We’ll confirm
+                your appointment shortly.
+              </p>
+            </div>
+            <div class="faq-item" data-aos="fade-right">
+              <h6>Do you accept walk-in patients?</h6>
+              <p>
+                Yes, walk-ins are welcome. However, appointments are preferred
+                for faster service.
+              </p>
+            </div>
+            <div class="faq-item" data-aos="fade-right">
+              <h6>What types of tests are available?</h6>
+              <p>
+                We offer blood tests, urine tests, ECG, ultrasound, X-ray, and
+                diabetes checkups.
+              </p>
+            </div>
+          </div>
 
-  <!-- Clinic Overview -->
-  <section class="clinic-overview">
-    <div class="container">
-      <h2 class="section-title" data-aos="fade-up">Clinic Overview</h2>
-      <div class="row align-items-center">
-        <div class="col-md-6" data-aos="fade-right">
-          <img src="yourclinicimage.jpg" class="img-fluid rounded-4 shadow" alt="Clinic">
-        </div>
-        <div class="col-md-6" data-aos="fade-left">
-          <p>At Shri Vishwakarma Clinic, we combine compassionate care with advanced medical technology. Under the guidance of <strong>Dr. Vinod Kumar Jangir</strong>, we provide complete health diagnostics, diabetes management, ultrasound services, and preventive healthcare — all in one trusted center.</p>
-          <p>Our clinic is equipped with X-ray, ECG, and advanced ultrasound systems. We aim to ensure early diagnosis, accurate treatment, and better outcomes for every patient who visits us.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- FAQ Section -->
-  <section class="faq-section">
-    <div class="container">
-      <h2 class="section-title" data-aos="fade-up">Frequently Asked Questions</h2>
-      <div class="row">
-        <div class="col-md-6">
-          <div class="faq-item" data-aos="fade-right">
-            <h6>How can I book an appointment?</h6>
-            <p>You can call us directly or fill the form above. We’ll confirm your appointment shortly.</p>
-          </div>
-          <div class="faq-item" data-aos="fade-right">
-            <h6>Do you accept walk-in patients?</h6>
-            <p>Yes, walk-ins are welcome. However, appointments are preferred for faster service.</p>
-          </div>
-          <div class="faq-item" data-aos="fade-right">
-            <h6>What types of tests are available?</h6>
-            <p>We offer blood tests, urine tests, ECG, ultrasound, X-ray, and diabetes checkups.</p>
-          </div>
-        </div>
-
-        <div class="col-md-6">
-          <div class="faq-item" data-aos="fade-left">
-            <h6>Do you provide home sample collection?</h6>
-            <p>Yes, we offer home sample collection in Mukundgarh for select tests.</p>
-          </div>
-          <div class="faq-item" data-aos="fade-left">
-            <h6>What payment modes are accepted?</h6>
-            <p>We accept cash, UPI, and all major debit/credit cards.</p>
-          </div>
-          <div class="faq-item" data-aos="fade-left">
-            <h6>Do you offer regular health check packages?</h6>
-            <p>Yes, we have affordable health checkup packages for every age group.</p>
+          <div class="col-md-6">
+            <div class="faq-item" data-aos="fade-left">
+              <h6>Do you provide home sample collection?</h6>
+              <p>
+                Yes, we offer home sample collection in Mukundgarh for select
+                tests.
+              </p>
+            </div>
+            <div class="faq-item" data-aos="fade-left">
+              <h6>What payment modes are accepted?</h6>
+              <p>We accept cash, UPI, and all major debit/credit cards.</p>
+            </div>
+            <div class="faq-item" data-aos="fade-left">
+              <h6>Do you offer regular health check packages?</h6>
+              <p>
+                Yes, we have affordable health checkup packages for every age
+                group.
+              </p>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Testimonials Section -->
-  <section class="testimonial-section">
-    <div class="container">
-      <h2 class="section-title" data-aos="fade-up">What Our Patients Say</h2>
-      <div class="row g-4">
-        <div class="col-md-4" data-aos="zoom-in">
-          <div class="testimonial-card text-center">
-            <i class="bi bi-chat-quote"></i>
-            <p>“Dr. Jangir’s diagnosis was very accurate, and his treatment worked wonders. The staff is also very polite.”</p>
-            <h5>- Pooja Sharma</h5>
+    <!-- Testimonials Section -->
+    <section class="testimonial-section">
+      <div class="container">
+        <h2 class="section-title" data-aos="fade-up">What Our Patients Say</h2>
+        <div class="row g-4">
+          <div class="col-md-4" data-aos="zoom-in">
+            <div class="testimonial-card text-center">
+              <i class="bi bi-chat-quote"></i>
+              <p>
+                “Dr. Jangir’s diagnosis was very accurate, and his treatment
+                worked wonders. The staff is also very polite.”
+              </p>
+              <h5>- Pooja Sharma</h5>
+            </div>
           </div>
-        </div>
-        <div class="col-md-4" data-aos="zoom-in" data-aos-delay="150">
-          <div class="testimonial-card text-center">
-            <i class="bi bi-chat-quote"></i>
-            <p>“Best doctor in Mukundgarh! Very patient and explains everything clearly. Highly recommended.”</p>
-            <h5>- Rahul Verma</h5>
+          <div class="col-md-4" data-aos="zoom-in" data-aos-delay="150">
+            <div class="testimonial-card text-center">
+              <i class="bi bi-chat-quote"></i>
+              <p>
+                “Best doctor in Mukundgarh! Very patient and explains everything
+                clearly. Highly recommended.”
+              </p>
+              <h5>- Rahul Verma</h5>
+            </div>
           </div>
-        </div>
-        <div class="col-md-4" data-aos="zoom-in" data-aos-delay="300">
-          <div class="testimonial-card text-center">
-            <i class="bi bi-chat-quote"></i>
-            <p>“Excellent ultrasound and diabetes management service. Clean clinic and very professional.”</p>
-            <h5>- Suman Gupta</h5>
+          <div class="col-md-4" data-aos="zoom-in" data-aos-delay="300">
+            <div class="testimonial-card text-center">
+              <i class="bi bi-chat-quote"></i>
+              <p>
+                “Excellent ultrasound and diabetes management service. Clean
+                clinic and very professional.”
+              </p>
+              <h5>- Suman Gupta</h5>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Scripts -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
-  <script>AOS.init({ duration: 1000, once: true });</script>
-</body>
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script>
+      AOS.init({ duration: 1000, once: true });
+    </script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "WebPage",
+            "@id": "https://yourwebsite.com/contact",
+            "url": "https://yourwebsite.com/contact",
+            "name": "Contact Us | Dr. Vinod Kumar Jangir",
+            "description": "Contact Shri Vishwakarma Clinic: phone, email, address, clinic timings, and appointment form for Dr. Vinod Kumar Jangir.",
+            "isPartOf": {
+              "@type": "WebSite",
+              "@id": "https://yourwebsite.com/"
+            }
+          },
+
+          {
+            "@type": "BreadcrumbList",
+            "@id": "https://yourwebsite.com/contact#breadcrumb",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://yourwebsite.com/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Contact Us",
+                "item": "https://yourwebsite.com/contact"
+              }
+            ]
+          },
+
+          {
+            "@type": "MedicalClinic",
+            "@id": "https://yourwebsite.com/#clinic",
+            "name": "Shri Vishwakarma Clinic",
+            "url": "https://yourwebsite.com/",
+            "image": "https://yourwebsite.com/clinic-photo.jpg",
+            "logo": "https://yourwebsite.com/logo.png",
+            "telephone": "+91 818869677",
+            "email": "dr.vinodjangir@gmail.com",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "Shri Vishwakarma Clinic",
+              "addressLocality": "Mukundgarh",
+              "addressRegion": "Rajasthan",
+              "postalCode": "000000",
+              "addressCountry": "IN"
+            },
+            "openingHoursSpecification": [
+              {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": [
+                  "Monday",
+                  "Tuesday",
+                  "Wednesday",
+                  "Thursday",
+                  "Friday",
+                  "Saturday"
+                ],
+                "opens": "09:00",
+                "closes": "18:00"
+              }
+            ],
+            "medicalSpecialty": [
+              "Diabetology",
+              "General Medicine",
+              "Pathology",
+              "Ultrasound",
+              "ECG",
+              "X-ray"
+            ],
+            "hasMap": "https://www.google.com/maps?q=Mukundgarh,Rajasthan"
+          },
+
+          {
+            "@type": "FAQPage",
+            "@id": "https://yourwebsite.com/contact#faq",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "How can I book an appointment?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "You can call us directly or fill the contact form. We will confirm your appointment shortly."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Do you accept walk-in patients?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Yes, walk-ins are welcome, but appointments are preferred for faster service."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "What tests are available?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "We provide ultrasound, X-ray, ECG, blood tests, urine tests and diabetes checkups."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Do you provide home sample collection?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Yes, home sample collection is available in Mukundgarh for selected tests."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "What payment modes are accepted?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "We accept cash, UPI, and all major debit/credit cards."
+                }
+              }
+            ]
+          }
+        ]
+      }
+    </script>
+  </body>
 </html>
